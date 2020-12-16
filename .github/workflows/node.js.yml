@@ -28,6 +28,5 @@ jobs:
     - shell: bash
       env: 
         DOCKPASSWORD: ${{ secrets.DOCKPASSWORD }}
-      run: 
-        chmod 755 ./build.sh
-        ./build.sh 
+      run: chmod 755 ./build.sh
+      run: ./build.sh 
