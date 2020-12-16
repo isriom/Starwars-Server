@@ -26,5 +26,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
       env: 
         DOCKPASSWORD: ${{secrets.DOCKPASSWORD}}
-    - run: chmod 755 ./build.sh
-    - run:  ./build.sh "$DOCKPASSWORD"
+    - run: 
+      echo $DOCKPASSWORD
+      chmod 755 ./build.sh
+      ./build.sh 
